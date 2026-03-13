@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Extractor</title>
+
+<link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1> AI Text Extractor</h1>
+<p>Upload or Drag Image to Extract Text</p>
+
+<div id="dropArea">
+
+<input type="file" id="fileInput" hidden>
+
+<p> Drag & Drop Image</p>
+<button id="uploadBtn">Upload Image</button>
+
+</div>
+
+<img id="preview">
+
+     <button id="extractBtn">Extract Text</button>
+
+<div id="loaderContainer">
+<div id="loaderBar"></div>
+</div>
+
+<p id="progressText"></p>
+
+<textarea id="result" placeholder="Extracted text will appear here"></textarea>
+
+<button id="copyBtn">Copy Text</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
